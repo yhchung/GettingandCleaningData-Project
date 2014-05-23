@@ -3,15 +3,19 @@ GettingandCleaningData-Project
 
 Coursera Getting and Cleaning Data Project
 
-This repo explains how all of the scripts work and how they are connected
+* This repo explains how all of the scripts work and how they are connected
 
 
-GitHub repo: https://github.com/yhchung/GettingandCleaningData-Project
+* GitHub repo: https://github.com/yhchung/GettingandCleaningData-Project
 
 
 run_analysis.R
-1. Merges the training and the test sets to create one data set.
-2. Extracts only the measurements on the mean and standard deviation for each measurement. 
-3. Uses descriptive activity names to name the activities in the data set
+(done) 1. Merges the training and the test sets to create one data set. 
+(done) 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+(done) 3. Uses descriptive activity names to name the activities in the data set
 4. Appropriately labels the data set with descriptive activity names. 
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+
+data location: ./data/
+
+
