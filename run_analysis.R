@@ -52,5 +52,16 @@ data$Activity[data$Activity == 6] <- "LAYING"
 # Export the data set into TXT file
 write.csv(data, file="./data/combined.csv")
 
+# 5. Creates a second, independent tidy data set with the average of 
+# each variable for each activity and each subject. 
+
+library(reshape2)
+data.melt <- melt(data, id.vars=c("Subject", "Activity"), 
+                  measure.vars=names(data[3:68]),
+                  variable.name="activity_variable", 
+                  value.name="activity_value")
+
+avgData <- dcast(data.melt, Subject + Activity ~ activity_variable, mean, 
+                 value.var="activity_value")
 
 
