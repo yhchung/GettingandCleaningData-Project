@@ -64,4 +64,5 @@ data.melt <- melt(data, id.vars=c("Subject", "Activity"),
 avgData <- dcast(data.melt, Subject + Activity ~ activity_variable, mean, 
                  value.var="activity_value")
 
+write.table(avgData, file="./data/average.txt", sep = ",")
 
