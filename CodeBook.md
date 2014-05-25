@@ -71,7 +71,24 @@
 |fBodyBodyGyroJerkMag-mean()  |
 |fBodyBodyGyroJerkMag-std()   |
 
-### 
+### Steps of preparing the Data Set
+
+1. Merges the training and the test sets to create one data set.
+	* training sets (subject_train.txt, X_train.txt, y_train.txt)
+	* test sets (subject_test.txt, X_test.txt, y_test.txt)
+	* combind data set: dataframe "merged"
+	* read.table, cbind, and rbind function used
+2. Extracts only the measurements on the mean and standard deviation for each measurement.
+	* using feature.txt
+	* only included variables with std() or mean()
+	* grep function used
+3. Uses descriptive activity names to name the activities in the data set.
+	* using activity_labels.txt
+4. Appropriately labels the data set with descriptive activity names.
+	* Column 1. Subject, Column 2. Activty, Column 3 ~. mean and standard deviation
+	* colnames and as.vector function used
+5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+	* melt and dcast function of reshape2 library used 
 
 
 
