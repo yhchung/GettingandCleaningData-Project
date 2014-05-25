@@ -51,7 +51,7 @@ A R script file to prepare the tiny data set as described below:
 	* using melt and dcast function of reshape2 library
 
 * Data location for run_analysis.R: ./data/
-* A line-by-line explanation of R script is commented on the R file.
+* **A line-by-line explanation of R script is commented on the R file.**
 
 
 
