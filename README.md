@@ -18,18 +18,32 @@ Here are the data for the project:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-## 
+## File Description
 
+### README.md
 
-## run_analysis.R
+This file. This file explains the project files and its relationship.
 
+### CodeBook.md
 
-(done) 1. Merges the training and the test sets to create one data set. 
-(done) 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
-(done) 3. Uses descriptive activity names to name the activities in the data set
-(done) 4. Appropriately labels the data set with descriptive activity names. 
+It describes variables, data, and all work that performed to prepare the tiny data set.
+
+### average.csv
+
+A tiny data set file. More details in CodeBook.md.
+
+### run_analysis.R
+
+A R script file to prepare the tiny data set as described below:
+
+1. Merges the training and the test sets to create one data set. 
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive activity names. 
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
-data location: ./data/
+* data location for run_analysis.R: ./data/
+
+
 
 
