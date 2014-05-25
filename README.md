@@ -36,7 +36,7 @@ A tiny data set file. More details in CodeBook.md.
 
 A R script file to prepare the tiny data set as described below:
 
-1. Merges the training and the test sets to create one data set. 
+1. Merges the training and the test sets to create one data set.
 ⋅⋅* training sets (subject_train.txt, X_train.txt, y_train.txt)
 ⋅⋅* test sets (subject_test.txt, X_test.txt, y_test.txt) 
 ⋅⋅* combind data set: dataframe "merged"
@@ -44,6 +44,10 @@ A R script file to prepare the tiny data set as described below:
 3. Uses descriptive activity names to name the activities in the data set
 4. Appropriately labels the data set with descriptive activity names. 
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+
+2. Another item
+⋅⋅* Unordered sub-list. 
+
 
 * data location for run_analysis.R: ./data/
 * A line-by-line explanation of R script is commented on the R file.
