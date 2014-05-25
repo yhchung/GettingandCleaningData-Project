@@ -36,7 +36,6 @@ features <- read.table("./data/features.txt")
 # Extract only columns of mean and standard deviation
 meanstd <- features[grep("std\\(\\)|mean\\(\\)", features[,2]), ]
 
-# Point 3
 # Make new data frame that has 
 # Column 1. subject, Column 2. activty, Column 3 ~. mean and standard deviation
 data <- merged[, c(1, 2, meanstd[,1]+2)]
@@ -45,7 +44,7 @@ data <- merged[, c(1, 2, meanstd[,1]+2)]
 # Substitute descriptive activity names on the Column 2
 colnames(data) <- c("Subject", "Activity", as.vector(meanstd[,2]))
 
-# Uses descriptive activity names to name the activities in the data set
+# Point 3Uses descriptive activity names to name the activities in the data set
 data$Activity[data$Activity == 1] <- "WALKING"
 data$Activity[data$Activity == 2] <- "WALKING_UPSTAIRS"
 data$Activity[data$Activity == 3] <- "WALKING_DOWNSTAIRS"

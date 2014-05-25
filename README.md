@@ -41,13 +41,14 @@ A R script file to prepare the tiny data set as described below:
 	* test sets (subject_test.txt, X_test.txt, y_test.txt) 
 	* combind data set: dataframe "merged"
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
-3. Uses descriptive activity names to name the activities in the data set
+	* using feature.txt
+	* only included variables with std() or mean()
+3. Uses descriptive activity names to name the activities in the data set.
+	* using activity_labels.txt
 4. Appropriately labels the data set with descriptive activity names. 
+	* Column 1. Subject, Column 2. Activty, Column 3 ~. mean and standard deviation
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
-
-2. Another item
-⋅⋅* Unordered sub-list. 
-
+	* using melt and dcast function of reshape2 library
 
 * data location for run_analysis.R: ./data/
 * A line-by-line explanation of R script is commented on the R file.
