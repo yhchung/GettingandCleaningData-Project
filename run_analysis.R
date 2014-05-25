@@ -8,8 +8,9 @@
 # 5. Creates a second, independent tidy data set with the average of 
 #     each variable for each activity and each subject.
 
+# Point 1
 # Load test sets
-if(!file.exists("./data")){dir.create("./data")}
+#if(!file.exists("./data")){dir.create("./data")}
 testSubject <- read.table("./data/test/subject_test.txt")
 testValues <- read.table("./data/test/X_test.txt")
 testActivity <- read.table("./data/test/y_test.txt")
@@ -25,19 +26,22 @@ trainActivity <- read.table("./data/train/y_train.txt")
 # Column bind to make the train sets into a signle table
 train <- cbind(trainSubject, trainActivity, trainValues)
 
-# Point 1: Row bind to combine test and training sets
+# Row bind to combine test and training sets
 merged <- rbind(test, train)
 
+# Point 2
 # Read features information 
 features <- read.table("./data/features.txt")
 
 # Extract only columns of mean and standard deviation
 meanstd <- features[grep("std\\(\\)|mean\\(\\)", features[,2]), ]
 
+# Point 3
 # Make new data frame that has 
 # Column 1. subject, Column 2. activty, Column 3 ~. mean and standard deviation
 data <- merged[, c(1, 2, meanstd[,1]+2)]
 
+# Point 4
 # Substitute descriptive activity names on the Column 2
 colnames(data) <- c("Subject", "Activity", as.vector(meanstd[,2]))
 
@@ -65,4 +69,6 @@ avgData <- dcast(data.melt, Subject + Activity ~ activity_variable, mean,
                  value.var="activity_value")
 
 write.table(avgData, file="./data/average.txt", sep = ",")
+
+
 
