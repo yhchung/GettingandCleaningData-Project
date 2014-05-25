@@ -1,7 +1,7 @@
 ### Data Description
 
 |Variable Name              |Variable Type|Values|Description|
-|:----------------------------|
+|:----------------------------|-----------|------|-----------|
 |Subject                      |integer|1~30|Subject ID numbers|
 |Activity                     |
 |tBodyAcc-mean()-X            |
