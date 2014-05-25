@@ -3,8 +3,8 @@
 |Variable Name              |Variable Type|Values|Description|
 |:----------------------------|-----------|------|-----------|
 |Subject                      |integer|1~30|Subject ID numbers|
-|Activity                     |
-|tBodyAcc-mean()-X            |
+|Activity                     |factor|WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING|Activity name|
+|tBodyAcc-mean()-X            |float|(normalized and bounded within [-1,1])|Mean or standard deviation of the triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration|
 |tBodyAcc-mean()-Y            |
 |tBodyAcc-mean()-Z            |
 |tBodyAcc-std()-X             |
