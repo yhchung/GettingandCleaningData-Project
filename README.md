@@ -50,7 +50,7 @@ A R script file to prepare the tiny data set as described below:
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 	* using melt and dcast function of reshape2 library
 
-* data location for run_analysis.R: ./data/
+* Data location for run_analysis.R: ./data/
 * A line-by-line explanation of R script is commented on the R file.
 
 
