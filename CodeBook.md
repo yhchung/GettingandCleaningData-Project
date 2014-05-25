@@ -1,8 +1,8 @@
 ### Data Description
 
-|names.avgData.               |
+|Variable Name              |Variable Type|Values|Description|
 |:----------------------------|
-|Subject                      |
+|Subject                      |integer|1~30|Subject ID numbers|
 |Activity                     |
 |tBodyAcc-mean()-X            |
 |tBodyAcc-mean()-Y            |
@@ -70,4 +70,9 @@
 |fBodyBodyGyroMag-std()       |
 |fBodyBodyGyroJerkMag-mean()  |
 |fBodyBodyGyroJerkMag-std()   |
+
+### 
+
+
+
 
