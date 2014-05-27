@@ -53,5 +53,10 @@ A R script file to prepare the tiny data set as described below:
 * Data location for run_analysis.R: ./data/
 * **A line-by-line explanation of R script is commented on the R file.**
 
+## How to use the script
 
-
+1. Download and unzip the data file above.
+2. Place the files at ./data directory.
+3. Run the R script.
+4. ./data/combined.csv file will be produced for combinded both train and test set data only with the mean and standard deviation for each measurement. It also has descriptive activity names as labels
+5. ./data/average.txt file will be produced. It is a tidy data set with the average of each variable for each activity and each subject.
